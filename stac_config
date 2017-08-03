@@ -2,6 +2,9 @@
 # This is an example stac_config file. There must be a github repo hosting similar file
 # with the same name, stac_config. 
 
+# RHEL Repo
+rhel_repo=placesomerepo
+
 # Provided url will be used to 'wget' STAC repo
 stac_tar_url=http://perf1.perf.lab.eng.bos.redhat.com/jeder/STAC/STAC-N-Tools-Pkg20131015_jeder.tar.gz
 
@@ -16,10 +19,10 @@ receiver_core=6
 
 # Physical interface name, eg.'eth0', on openshift nodes over which producer and consumer are connected.
 # Assumption is being made that same interface names are same across nodes
-iface_name=em1
+iface_name=p5p1
 
 # For a quick test(1000 messages and shorter time durations), set this to 'True'. 
-enable_quick_test_mode=False
+enable_quick_test_mode=True
 
 # set this to True for running STAC tests with onload. This will take care of configuration inside pods only.
 # As a prerequisite, admin MUST install onload on the nodes.
